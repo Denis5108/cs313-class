@@ -33,13 +33,19 @@ li a {
 
 .main {
 	padding: 10px;
-	text-align:center;
-	text-decoration: none;
 }
+
+.main ul {
+	list-style-type: none;
+}
+
+.main div {
+	text-align:center;
+}
+
 .main p {
 	width: 40%;
 	overflow: hidden;
-	text-align: center;
 	border: 1px solid gray;
 }
 
