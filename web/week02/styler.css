@@ -64,6 +64,7 @@ li a {
 	background-color: #111;
 }
 .next {
+	width:10%
 	border:1px solid gray;
 	background-color: lightblue;
 }
