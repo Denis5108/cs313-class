@@ -11,6 +11,9 @@ li {
 	float: left;
 }
 
+body {
+	all: unset;
+}
 li a {
 	display: block;
 	color: white;
