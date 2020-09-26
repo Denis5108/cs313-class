@@ -39,15 +39,9 @@ li a {
 .grid-container {
 	grid-template-columns: repeat(1, 1fr);
 }
+
 .main ul {
 	list-style-type: none;
-}
-
-.main div {
-	text-align:center;
-}
-
-.main p {
 	width: 40%;
 	overflow: hidden;
 	border: 1px solid gray;
