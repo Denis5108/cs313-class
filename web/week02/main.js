@@ -4,7 +4,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function addSlides(n) {
-    showSlides(slidesIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
