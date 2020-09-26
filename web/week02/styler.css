@@ -54,6 +54,7 @@ li a {
 .main01 {
 	border-left: 3px solid green;
 	padding: 7px;
+	overflow:hidden;
 }
 
 .header h1 {
