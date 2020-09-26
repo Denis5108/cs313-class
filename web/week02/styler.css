@@ -59,7 +59,15 @@ li a {
 .navbar li a:hover {
 	background-color: #111;
 }
-
+.next {
+	border:1px solid gray;
+	background-color: lightblue;
+}
+footer {
+	bottom: 0;
+	position:fixed;
+	background-color: lightgray;
+}
 @media screen and (max-width: 800px) {
-
+	
 }
