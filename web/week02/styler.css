@@ -38,12 +38,11 @@ li a {
 	padding: 10px;
 }
 
-.main .mainIndex p {
+.main div {
 	width:50%;
 	margin: auto;
 	overflow: hidden;
 	padding: 10px;
-	border-left: 3px solid green;
 }
 
 .main ul {
@@ -52,6 +51,9 @@ li a {
 	overflow: hidden;
 }
 
+.main01 {
+	border: 1px solid green;
+}
 .header h1 {
 	font-size: 50px;
 }
