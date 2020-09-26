@@ -17,10 +17,3 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
-function addAssignments()
-{
-    var newdiv = document.createElement("p");
-    newdiv.innerHTML = "Link 1";
-    document.body.appendChild(newdiv)
-}
