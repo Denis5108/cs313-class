@@ -1,7 +1,3 @@
-* {
-	box-sizing: border-box;
-}
-
 .navbar {
 	list-style-type: none;
 	margin: 0;
@@ -17,7 +13,7 @@ li {
 }
 
 body {
-	/* all: unset; */
+	all: unset;
 	font-size: 28px;
 	padding: 30px;
 	height: 100%;
