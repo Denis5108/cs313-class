@@ -81,7 +81,7 @@ li a {
 }
 footer {
 	bottom: 0;
-	position:fixed;
+	/* position:fixed; */
 	margin: auto;
 	background-color: lightgray;
 }
