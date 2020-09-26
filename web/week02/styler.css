@@ -55,6 +55,7 @@ li a {
 	margin: auto;
 	background-color: lightblue;
 	border: 1px solid gray;
+	padding: 8px;
 }
 .main01 {
 	border-left: 3px solid green;
