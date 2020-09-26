@@ -69,8 +69,12 @@ li a {
 	border:1px solid gray;
 	cursor:pointer;
 	background-color: lightblue;
+	padding:16px;
+	right: 0;
 }
-
+.next:hover {
+	background-color:rgb(71, 68, 68);
+}
 .slides {
 	display: none;
 }
