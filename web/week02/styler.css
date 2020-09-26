@@ -32,9 +32,13 @@ li a {
 }
 
 .main {
+	display: grid;
 	padding: 10px;
 }
 
+.grid-container {
+	grid-template-columns: repeat(1, 1fr);
+}
 .main ul {
 	list-style-type: none;
 }
