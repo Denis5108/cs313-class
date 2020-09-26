@@ -28,6 +28,7 @@ li a {
 	padding: 30px;
 	text-align: center;
 	color: white;
+	background-color: black;
 }
 
 .header h1 {
@@ -39,5 +40,5 @@ li a {
 }
 
 @media screen and (max-width: 800px) {
-	
+
 }
