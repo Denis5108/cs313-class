@@ -52,8 +52,10 @@ li a {
 }
 
 .main01 {
-	border: 1px solid green;
+	border-left: 3px solid green;
+	padding: 5px;
 }
+
 .header h1 {
 	font-size: 50px;
 }
