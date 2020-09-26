@@ -70,9 +70,8 @@ li a {
 	cursor:pointer;
 	background-color: lightblue;
 }
-.slides {
-	/* display:none; */
-}
+
+
 footer {
 	bottom: 0;
 	position:fixed;
