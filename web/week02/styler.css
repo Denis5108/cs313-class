@@ -50,11 +50,15 @@ li a {
 	width: 40%;
 	overflow: hidden;
 }
-
+.assign {
+	cursor:pointer;
+	margin: auto;
+	background-color: lightblue;
+	border: 1px solid gray;
+}
 .main01 {
 	border-left: 3px solid green;
 	padding: 7px;
-	overflow:hidden;
 }
 
 .header h1 {
