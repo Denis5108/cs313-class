@@ -33,6 +33,8 @@ li a {
 
 .main {
 	padding: 10px;
+	text-align:center;
+	text-decoration: none;
 }
 .main p {
 	width: 40%;
