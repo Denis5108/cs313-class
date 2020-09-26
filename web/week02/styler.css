@@ -70,9 +70,13 @@ li a {
 	cursor:pointer;
 	background-color: lightblue;
 }
+.slides {
+	display:none;
+}
 footer {
 	bottom: 0;
 	position:fixed;
+	margin: auto;
 	background-color: lightgray;
 }
 @media screen and (max-width: 800px) {
