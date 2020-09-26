@@ -37,7 +37,10 @@ li a {
 .main p {
 	width: 40%;
 	overflow: hidden;
+	text-align: center;
+	border: 1px solid gray;
 }
+
 .header h1 {
 	font-size: 50px;
 }
