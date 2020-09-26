@@ -12,7 +12,7 @@ body {
 	top: 0;
 }
 
-li.navbar {
+.navbar li {
 	float: left;
 }
 
@@ -24,6 +24,6 @@ li a {
 	text-decoration: none;
 }
 
-li.navbar a:hover {
+.navbar li a:hover {
 	background-color: #111;
 }
