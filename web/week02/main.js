@@ -20,5 +20,7 @@ function showSlides(n) {
 
 function addAssignments()
 {
-    //
+    var newdiv = document.createElement("div");
+    newdiv.innerHTML = "Link 1";
+    document.body.appendChild(newdiv)
 }
