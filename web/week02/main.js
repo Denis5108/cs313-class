@@ -4,7 +4,7 @@ function myFunction() {
 
     x = document.getElementById("num").value;
 
-    if (isNaN(x) || x !== 20)
+    if (isNaN(x) || x != 20)
     {
         text = "Invalid age";
     } else {
