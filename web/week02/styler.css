@@ -13,7 +13,7 @@ body {
 }
 
 .list li {
-	border:1px solid black;
+	border:1px solid rgb(51, 61, 61);
 	margin: 2px;
 	cursor: pointer;
 	background-color: lightblue;
