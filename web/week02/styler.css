@@ -27,7 +27,6 @@ li a {
 	text-align:center;
 	margin: auto;
 	display:grid;
-	width: min(60%);
 	grid-template-columns: repeat(1, 1fr);
 }
 .header {
@@ -39,7 +38,7 @@ li a {
 
 .main {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: minmax(100px, auto);
 	padding: 10px;
 	width:50%;
