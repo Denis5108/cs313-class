@@ -14,6 +14,8 @@ body {
 
 .list li {
 	border:1px solid black;
+	margin: 2px;
+	cursor: pointer;
 	background-color: lightblue;
 }
 .navbar li {
