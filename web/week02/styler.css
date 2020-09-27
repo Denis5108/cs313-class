@@ -51,6 +51,9 @@ li a {
 	height: 25px;
 	border-radius: 50%;
 }
+.cdef {
+	float:right;
+}
 .main ul {
 	list-style-type: none;
 	width: 40%;
