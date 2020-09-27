@@ -27,7 +27,7 @@ li a {
 	text-align:center;
 	margin: auto;
 	display:grid;
-	background-color: yellow;
+	width: min(60%);
 	grid-template-columns: repeat(1, 1fr);
 }
 .header {
