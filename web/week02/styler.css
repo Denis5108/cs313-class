@@ -25,7 +25,9 @@ li a {
 }
 .list {
 	background-color:yellow;
-	width: min(20%);
+	width: min(50%);
+	text-align:center;
+	margin: auto;
 }
 .header {
 	padding: 30px;
