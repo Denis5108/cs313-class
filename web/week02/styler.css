@@ -65,3 +65,24 @@ footer {
 	margin: auto;
 	background-color: lightgray;
 }
+
+.main ul {
+	list-style-type: none;
+	width: 40%;
+}
+
+.header h1 {
+	font-size: 50px;
+}
+
+.navbar li a:hover {
+	background-color: #111;
+}
+
+footer {
+	bottom: 0;
+	padding: 20px;
+	text-align: center;
+	margin: auto;
+	background-color: lightgray;
+}
