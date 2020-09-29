@@ -1,6 +1,5 @@
 
 
 <?php
-
-echo "Welcome" . $_POST["firstname"] . " " . $_POST["lastname"] . "<br>"
+echo "Welcome" . $_GET["fname"] . " " . $_GET["lname"] . "<br>"
 ?>
