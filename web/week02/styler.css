@@ -1,71 +1,74 @@
-
-body {
-	font-size: 28px;
-}
-.navbar {
-	list-style-type: none;
+* {
+	box-sizing: border-box;
+  }
+  
+  .header {
+	 padding: 60px;
+	 text-align: center;
+	 background: lightblue;
+	 color: white;
+  }
+  .navbar {
+	 display: flex;
+	 background-color: #333;
+  }
+  body {
 	margin: 0;
-	padding: 0;
-	overflow:hidden;
-	background-color: #333;
-	position: sticky;
-	top: 0;
-}
-
-.list li {
-	border:1px solid rgb(51, 61, 61);
-	margin: 2px;
-	cursor: pointer;
-	background-color: lightblue;
-}
-.navbar li {
-	float: left;
-}
-
-li a {
-	display:block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-.header {
-	padding: 30px;
-	text-align: center;
-	color: white;
-	background-color: black;
-}
-
-.main {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-auto-rows: minmax(100px, auto);
-	padding: 10px;
-	width:50%;
-	margin: auto;
-	overflow: hidden;
-	padding: 10px;
-}
-
-.main ul {
-	list-style-type: none;
-	width: 40%;
-	overflow: hidden;
-}
-
-.header h1 {
-	font-size: 50px;
-}
-
-.navbar li a:hover {
-	background-color: #111;
-}
-
-footer {
-	bottom: 0;
-	padding: 20px;
-	text-align: center;
-	margin: auto;
-	background-color: lightgray;
-}
+  }
+  .image1 {
+	 background-color: #ddd;
+	 height: 200px;
+	 text-align: center;
+  }
+  .image1 ul li {
+	 margin: 5px;
+	 background-color: #333;
+	 color: white
+  }
+  .navbar a {
+	 color: white;
+	 padding: 14px 16px;
+	 text-decoration: none;
+	 text-align: center;
+  }
+  
+  .side {
+	 -ms-flex: 10%;
+	 flex: 10%;
+	 background-color: lightblue;
+	 padding: 20px;
+  }
+  .main {
+	 flex: 70%;
+	 background-color: white;
+	 padding: 20px;
+  }
+  .row {
+	 display: flex;
+	 flex-wrap: wrap;
+  }
+  .main div {
+	 text-align: center;
+  }
+  .icon-bar {
+	  text-align: center;
+  }
+  footer {
+	  bottom: 0;
+	  padding: 20px;
+	  text-align: center;
+	  margin: auto;
+	  background-color: lightgray;
+  }
+  
+  @media screen and (max-width: 700px) {
+		.row, .navbar {
+			 flex-direction: column;
+		}
+  }
+  @media screen and (max-width: 400px) {
+		.navbar a {
+			float: none;
+			width: 100%;
+		}
+  }
