@@ -1,7 +1,6 @@
 
+
 <?php
-echo "Today is ".date("Y/m/d")."<br>";
-echo "Today is ".date("Y.m.d")."<br>";
-echo "Today is ".date("Y-m-d")."<br>";
-echo "Today is ".date("1");
+
+echo "Welcome" . $_POST["firstname"] . " " . $_POST["lastname"] . "<br>"
 ?>
