@@ -61,7 +61,7 @@
 	  background-color: lightgray;
   }
   
-  @media screen and (max-width: 200px) {
+  @media screen and (max-width: 400px) {
 		.row, .navbar {
 			 flex-direction: column;
 		}
