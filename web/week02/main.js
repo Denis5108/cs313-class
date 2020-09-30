@@ -3,8 +3,11 @@ function myFunction() {
     var x, text;
 
     x = document.getElementById("num").value;
-
-    if (isNaN(x) || x != 20)
+    birthYear   = 2000;
+    currentYear = new Date();
+    
+    myAge = cuurentYear.getFullYear() - birthYear;
+    if (isNaN(x) || x != myAge)
     {
         text = "Invalid age";
     } else {
