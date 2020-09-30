@@ -1,7 +1,9 @@
 <html>
 <body>
 <?php
-//echo "Welcome" . " " . $_GET["fname"] . " " . $_GET["lname"] . "<br>"
+    $firstName = htmlspecialchars($_POST['fname']);
+    $lastName  = htmlspecialchars($_POST['lname']);
+    echo "Welcome" . " " . $firstName . " " . $lastName . "<br>"
 ?>
 </body>
 </html>
