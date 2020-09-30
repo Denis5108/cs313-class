@@ -32,18 +32,37 @@
 					<li>Physics</li>
 				    </ul>
 			</div>
-			<form action="<?php 
-				echo 'Welcome' . $_GET['fname'] . ' ' . $_GET['lname'] . '<br>'?> " id="form1" method="get">
+			<?php
+				$firstName, $lastName = " ";
+
+				if ($_SERVER["REQUEST_METHOD"] == "POST")
+				{
+					$firstName = test_input($_POST["fname"]);
+					$lastName  = test_input($_POST["lname"]);
+				}
+
+				function test_input($data) {
+					$data = trim($data);
+					$data = stripslashes($data);
+					$data = htmlspecialchars($data);
+					return $data;
+				}
+			?>
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1" method="get">
 				<label for="fname">First name:</label><br>
 				<input type="text" name="fname"><br>
 				<label for="lname">Last name:</label><br>
 				<input type="text" name="lname"><br><br>
 				<input type="submit" value="Submit">
 			</form>
+
+			<?php
+				echo "<h1>Welcome</h1>" . $firstName . " " . $lastName . "<br>";
+			?>
 		   </div>
 		 </div>
 
-	     <div class="main">
+	    <div class="main">
 		<h1 style="text-align:center">Biography</h1>
 				<p>
 				Hello I am Denis Garley I am attending Rexburg for Computer Science,
