@@ -77,7 +77,6 @@
 	<footer>
 		<div>Denis Garley</div>
 	</footer>
-	<script src="main.js"></script>
 </body>
 
 </html>
