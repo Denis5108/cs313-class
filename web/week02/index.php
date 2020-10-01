@@ -127,6 +127,8 @@
         echo $_POST["AN"] . "<br>";
       }*/
       
-    ?>
+	?>
+	<script src="main.js"></script>
+	
   </body>
 </html>

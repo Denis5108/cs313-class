@@ -35,7 +35,7 @@
 				    </ul>
 			</div>
 		
-			<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" id="form1" method="post">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1" method="post">
 				<label for="fname">First name:</label><br>
 				<input type="text" name="fname"><br>
 				<label for="lname">Last name:</label><br>
