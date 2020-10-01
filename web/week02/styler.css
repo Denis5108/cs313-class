@@ -63,6 +63,7 @@
   
   @media screen and (max-width: 800px) {
 		.row, .navbar {
+			border-radius:none;
 			 flex-direction: column;
 		}
   }

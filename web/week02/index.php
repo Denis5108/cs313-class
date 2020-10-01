@@ -42,6 +42,13 @@
 				<input type="text" name="lname"><br><br>
 				<input type="submit" value="Submit">
 			</form>
+			<?php
+				$firstName = $_POST["fname"];
+				$lastName  = $_POST["lname"];
+
+
+				echo "<h1>Welcome</h1> " . $firstName . " " . $lastName;
+			?>
 		   </div>
 		 </div>
 	    <div class="main">
