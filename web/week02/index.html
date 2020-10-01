@@ -32,7 +32,7 @@
 				    </ul>
 			</div>
 		
-			<form action="hello.php" id="form1" method="post">
+			<form action="<?php echo htmlspecialchars($_SERVER[\"PHP_SELF\"]);?>" id="form1" method="post">
 				<label for="fname">First name:</label><br>
 				<input type="text" name="fname"><br>
 				<label for="lname">Last name:</label><br>
@@ -41,7 +41,11 @@
 			</form>
 		   </div>
 		 </div>
-
+		 <?php
+    		$firstName = htmlspecialchars($_POST['fname']);
+    		$lastName  = htmlspecialchars($_POST['lname']);
+		?>
+		<?php 	echo '<h1'> . "Welcome" . " " . $firstName . " " . $lastName . "</h1><br>"?>
 	    <div class="main">
 		<h1 style="text-align:center">Biography</h1>
 				<p>
