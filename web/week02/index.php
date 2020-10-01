@@ -44,11 +44,6 @@
 			</form>
 		   </div>
 		 </div>
-		 <?php
-    		$firstName = htmlspecialchars($_POST['fname']);
-    		$lastName  = htmlspecialchars($_POST['lname']);
-		?>
-		<?php 	echo '<h1'> . "Welcome" . " " . $firstName . " " . $lastName . "</h1><br>"?>
 	    <div class="main">
 		<h1 style="text-align:center">Biography</h1>
 				<p>
