@@ -24,7 +24,7 @@
 	     <div class="side">
 		   <div class="icon-bar">
 		   	<img src="Denis Garley.jpg">
-		<h4 style="text-align:center">Decription</h4>
+			<h4 style="text-align:center">Decription</h4>
                 <div class="image1">Hello, my name is Denis Garley
 				    I do computer science my hobbies are.				    
 				    <ul style="margin:0 auto; padding: 0; list-style-type: none;">
@@ -52,7 +52,7 @@
 		   </div>
 		 </div>
 	    <div class="main">
-		<h1 style="text-align:center">Biography</h1>
+				<h1 style="text-align:center">Biography</h1>
 				<p>
 				Hello I am Denis Garley I am attending Rexburg for Computer Science,
 					it is something that I have a passion for and so I decided to program.
@@ -67,7 +67,13 @@
 					random things to add to this site. Other times I can't think of anything.
 					So I made my website look like this.
 				</p>
-				<div>
+		<div>
+		<div>
+			<p>Guess my age?</p>
+			<input id = "num"><br>
+			<button type="button" onclick="myFunction()">Submit</button>
+			<p id="demo"></p>
+		</div>		
 	<footer>
 		<div>Denis Garley</div>
 	</footer>

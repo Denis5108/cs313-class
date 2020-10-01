@@ -61,6 +61,12 @@
 	  background-color: lightgray;
   }
   
+  @media screen and (max-width: 800px) {
+		.row, .navbar {
+			border-radius:none;
+			 flex-direction: column;
+		}
+  }
   @media screen and (max-width: 400px) {
 		.navbar a {
 			float: none;
