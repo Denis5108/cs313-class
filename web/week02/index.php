@@ -17,7 +17,7 @@
 		<p>Profile Page</p>
 	</div>
 	<div class="navbar">
-		<a href="index.html">Home</a>
+		<a href="index.php">Home</a>
 		<a href="project.html">Projects</a>
 	</div>
 	<div class="row">
@@ -34,10 +34,16 @@
 					<li>Physics</li>
 				    </ul>
 			</div>
-			<?php
-
-				echo "Hello World";
-			?>
+			
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1" method="post">
+				<label for="fname">First name:</label><br>
+				<input type="text" name="fname"><br>
+				<label for="lname">Last name:</label><br>
+				<input type="text" name="lname"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		   </div>
+		 </div>
 	<footer>
 		<div>Denis Garley</div>
 	</footer>
