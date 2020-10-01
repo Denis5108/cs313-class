@@ -67,17 +67,10 @@
 					random things to add to this site. Other times I can't think of anything.
 					So I made my website look like this.
 				</p>
-		<div>
-		<div>
-			<p>Guess my age?</p>
-			<input id = "num"><br>
-			<button type="button" onclick="myFunction()">Submit</button>
-			<p id="demo"></p>
-		</div>		
+		<div>	
 	<footer>
 		<div>Denis Garley</div>
 	</footer>
-	<script src="main.js"></script>
 </body>
 
 </html>
