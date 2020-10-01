@@ -1,83 +1,132 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="styler.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Home Page</title>
-</head>
+    <title></title>
+  </head>
+  <body>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+      <label for="name">Name:</label>
+      <input type="text" value="" id="name" name="name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" value="" id="email" name="email">
+      <br>
 
-<body>
-	<div class="header">
-		<h1>Denis Garley</h1>
-		<p>Profile Page</p>
-	</div>
-	<div class="navbar">
-		<a href="index.html">Home</a>
-		<a href="project.html">Projects</a>
-	</div>
-	<div class="row">
-	     <div class="side">
-		   <div class="icon-bar">
-		   	<img src="Denis Garley.jpg">
-		<h4 style="text-align:center">Decription</h4>
-                <div class="image1">Hello, my name is Denis Garley
-				    I do computer science my hobbies are.				    
-				    <ul style="margin:0 auto; padding: 0; list-style-type: none;">
-					<li>Art/Animation</li>
-				    	<li>Piano</li>
-					<li>Coding</li>
-					<li>Physics</li>
-				    </ul>
-			</div>
-		
-			<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" id="form1" method="post">
-				<label for="fname">First name:</label><br>
-				<input type="text" name="fname"><br>
-				<label for="lname">Last name:</label><br>
-				<input type="text" name="lname"><br><br>
-				<input type="submit" value="Submit">
-			</form>
-		   </div>
-		 </div>
-		 <!-- <?php
-    		$firstName = htmlspecialchars($_POST['fname']);
-    		$lastName  = htmlspecialchars($_POST['lname']);
-		?>
-		<?php 	echo '<h1'> . "Welcome" . " " . $firstName . " " . $lastName . "</h1><br>"?> -->
-	    <div class="main">
-		<h1 style="text-align:center">Biography</h1>
-				<p>
-				Hello I am Denis Garley I am attending Rexburg for Computer Science,
-					it is something that I have a passion for and so I decided to program.
-					I like to code and make fun programs. Checkout some of my fun ideas on scratch.
-					I have been coding since I was in elementary ever since it has been a passion.
-					The idea of being able to write code that is interpreted by the computer is a
-					cool concept to understand my passion is learning. My goal in 
-					this class is to learn how to make websites that can run on a server.</p>
-				<p> 
-					I am not the best at making websites I do try to make sure my website
-					looks neat for anyone that wants to view it. Many times I think about
-					random things to add to this site. Other times I can't think of anything.
-					So I made my website look like this.
-				</p>
-				<div>
-					<p>Guess my age?</p>
-					<input id = "num"><br>
-					<button type="button" onclick="myFunction()">Submit</button>
-					<p id="demo"></p>
-				</div>
-	     </div>
-	</div>
+      <?php 
+        $options = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
 
-	<footer>
-		<div>Denis Garley</div>
-	</footer>
-	<script src="main.js"></script>
-</body>
+        echo "<label for=\"major\"> Major </label><br>";
 
+        foreach ($options as $item)
+        {
+          echo "<input type=\"radio\" value=\"" . $item . "\" name=\"major\" id=\"" . $item ."\">";
+          echo "<label for=\"". $item . "\">" . $item . "</label><br>";
+        }
+      ?>
+
+      <!--
+      <label for="major">Major</label><br>
+      <input type="radio" value="Computer Science" id="CS" name="major">
+      <label for="CS">Computer Science</label>
+      <br>
+      <input type="radio" value="Web Design and Development" id="WDD" name="major">
+      <label for="WDD">Web Design and Development</label>
+      <br>
+      <input type="radio" value="Computer Information Technology" id="CIT" name="major">
+      <label for="CIT">Computer Information Technology</label>
+      <br>
+      <input type="radio" value="Computer Engineering" id="CE" name="major">
+      <label for="CE">Computer Engineering</label>
+      <br> -->
+      <br>
+      <label for="comments">Comments:</label><br>
+      <textarea name="comments" value="" id="comments"></textarea>
+      <br>
+      <label for="visited">What continents have you visited?</label><br>
+      <input type="checkbox" value="NA" name="NA" id="NA"> 
+      <label for="NA">North America</label>
+      <br>
+
+      <input type="checkbox" value="SA" name="SA" id="SA"> 
+      <label for="SA">South America</label>
+      <br>
+
+      <input type="checkbox" value="EU" name="EU" id="EU"> 
+      <label for="EU">Europe</label>
+      <br>
+
+      <input type="checkbox" value="A" name="A" id="A"> 
+      <label for="A">Asia</label>
+      <br>
+
+      <input type="checkbox" value="HJ" name="HJ" id="HJ"> 
+      <label for="HJ">Australia</label>
+      <br>
+
+      <input type="checkbox" value="AFR" name="AFR" id="AFR"> 
+      <label for="AFR">Africa</label>
+      <br>
+
+      <input type="checkbox" value="AN" name="AN" id="AN"> 
+      <label for="AN">Antarctica</label>
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <?php 
+      $name = $_POST["name"];
+      $email = $_POST["email"];
+      $major = $_POST["major"];
+
+      $comments = $_POST["comments"];
+      echo "Your name is " . $name . "<br> Your email is " . "<a href=\"mailto:" . $email . "\"> " . $email . "</a>" ."<br>";
+      echo "Your Major is " . $major . "<br>" . "Your comments:<br>" . $comments . "<br> You have visited<br>";
+      
+      $countryCode = array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "A"=>"Asia", "HJ"=>"Australia", 
+                           "AFR"=>"Africa", "AN"=>"Antarctica");
+      
+      foreach($countryCode as $key=>$value)
+      {
+        if(isset($_POST[$key]))
+        {
+          echo $value . "<br>";
+        }
+      }
+
+      /*if (isset($_POST["NA"]))
+      {
+        echo $_POST["NA"] . "<br>";
+      }
+      if (isset($_POST["SA"]))
+      {
+        echo $_POST["SA"] . "<br>";
+      }
+      if (isset($_POST["EU"]))
+      {
+        echo $_POST["EU"] . "<br>";
+      }
+      if (isset($_POST["A"]))
+      {
+        echo $_POST["A"] . "<br>";
+      }
+      if (isset($_POST["HJ"]))
+      {
+        echo $_POST["HJ"] . "<br>";
+      }
+      if (isset($_POST["AFR"]))
+      {
+        echo $_POST["AFR"] . "<br>";
+      }
+      if (isset($_POST["AN"]))
+      {
+        echo $_POST["AN"] . "<br>";
+      }*/
+      
+    ?>
+  </body>
 </html>
