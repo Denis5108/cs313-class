@@ -7,7 +7,7 @@
      
     
     // connection
-    $conn = new mysqli($servername, $username, $password);
+    $conn = new mysqli($servername, $username, $password, $database);
 
 
     // checking connection
