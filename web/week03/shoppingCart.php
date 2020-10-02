@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-	    <link rel="stylesheet" type="text/css" href="styler.css">
+	    <link rel="stylesheet" type="text/css" href="styler.css?v=<?php echo time(); ?>">
         </head>
     <body>
         <nav>Our Decour Has Never Been Better</nav>
-         <div class="items">
-            <div">Donuts</div>
-            <div">Pizza</div>
-            <div">Chicken</div>
-            <div">Orange Juice</div>
-            <div">Koby 12's</div>
-        </div>
+
+        <?php 
+            $items = array("Donut, Pizza, Chicken, Orange Juice, Koby");
+
+            foreach($items as $row) {
+                echo "<div><a href=\"shoppingCart.php?page=$row\"";
+                if ($row == $page)
+                {
+                    echo "class=\"items\"";
+                }
+
+                echo ">$row</a></div>\n";
+            }
+        ?>
     </body>
     </html>
