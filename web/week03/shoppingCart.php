@@ -8,7 +8,7 @@
 
         <?php 
             $items = array("Button");
-            echo "<div>" . $items . "</div>";
+            print_r($items);
         ?>
     </body>
     </html>
