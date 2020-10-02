@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
+	    <link rel="stylesheet" type="text/css" href="styler.css">
+        </head>
+    <body>
         <nav>Our Decour Has Never Been Better</nav>
-         <div>
-            <div onclick="viewProduct()">Donuts</div>
-            <div onclick="viewProduct()">Pizza</div>
-            <div onclick="viewProduct()">Chicken</div>
-            <div onclick="viewProduct()">Orange Juice</div>
-            <div onclick="viewProduct()">Koby 12's</div>
+         <div class="items">
+            <div">Donuts</div>
+            <div">Pizza</div>
+            <div">Chicken</div>
+            <div">Orange Juice</div>
+            <div">Koby 12's</div>
         </div>
-        
-        <!--<form method="post" action="<?php //echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Item: <input type="text" name="item">
-            <input type="submit">
-        </form>-->
-
-        <?php //echo "<h1> You put a " . $_POST["item"] . " in your shopping list</h1>";?> -->
-</head>
+    </body>
     </html>
