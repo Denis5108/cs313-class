@@ -7,17 +7,8 @@
         <nav>Our Decour Has Never Been Better</nav>
 
         <?php 
-            $items = array("Donut, Pizza, Chicken, Orange Juice, Koby 12's");
-
-            foreach($items as $row) {
-                echo "<div><a href=\"shoppingCart.php?page=$row\"";
-                if ($row == $page)
-                {
-                    echo "class=\"items\"";
-                }
-
-                echo ">$row</a></div>\n";
-            }
+            $items = array("Button" => "Click me!");
+            echo "<div>" . items[0] . "</div>";
         ?>
     </body>
     </html>
