@@ -2,10 +2,10 @@
 <html>
     <head>
         <div>
-            <div style="background-color:">Donuts</div>
-            <div style="background-color:">Pizza</div>
-            <div style="background-color:">Chicken</div>
-            <div style="background-color:">Orange Juice</div>
+            <div style="background-color:yellow">Donuts</div>
+            <div style="background-color:green">Pizza</div>
+            <div style="background-color:lightblue">Chicken</div>
+            <div style="background-color:orange">Orange Juice</div>
         </div>
         <?php
         // add a list to put into a list of Orders in a shopping cart.
