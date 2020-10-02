@@ -18,11 +18,12 @@
 
     // create table
     $sql = "CREATE TABLE Customers (
-        id INT(6) unsigned auto_increment primary key,
+        customerID INT UNSIGNED AUTO_INCREMENT,
         firstName varchar(30),
         lastname  varchar(30),
         email     varchar(30),
-        address   varchar(30)
+        address   varchar(30),
+        PRIMARY KEY(customerID)
     )";
 
     if (mysql_query($conn, $sql)) {
