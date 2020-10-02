@@ -7,7 +7,7 @@
         <nav>Our Decour Has Never Been Better</nav>
 
         <?php 
-            $items = array("Button" => "Click me!");
+            $items = array("Button");
             echo "<div>" . items[0] . "</div>";
         ?>
     </body>
