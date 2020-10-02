@@ -12,7 +12,7 @@
 
             forEach($items as $item)
             {
-                echo "<li class=\"items\">" . $item . "</li>";
+                echo "<li class=\"items\">" . $item . "</li><br>";
             }
             echo "</ul>";
         ?>
