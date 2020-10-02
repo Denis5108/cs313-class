@@ -8,7 +8,10 @@
 
         <?php 
             $items = array("Button");
-            print_r($items[0]);
+            forEach($items as $item)
+            {
+                echo "<div class=\"items\">" . $item . "</div>";
+            }
         ?>
     </body>
     </html>
