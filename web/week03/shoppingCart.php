@@ -11,7 +11,8 @@
 
             foreach($items as $item)
             {
-                echo "<li class=\"items\">" . $item . "</li>" . "<br>";
+                echo "<div class=\"items\">" . $item . "</div>";
+                echo "<br>";
             }
         ?>
     </body>
