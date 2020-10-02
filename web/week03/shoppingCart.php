@@ -6,15 +6,13 @@
     <body>
         <nav>Our Decour Has Never Been Better</nav>
         <?php 
-            echo "<ul>";
             $items = array("Button1, Buttoon2, Button3, Button4, Button5");
 
 
-            forEach($items as $item)
+            foreach($items as $item)
             {
                 echo "<li class=\"items\">" . $item . "</li>" . "<br>";
             }
-            echo "</ul>";
         ?>
     </body>
     </html>
