@@ -7,7 +7,7 @@
         <nav>Our Decour Has Never Been Better</nav>
 
         <?php 
-            $items = array("Donut, Pizza, Chicken, Orange Juice, Koby");
+            $items = array("Donut, Pizza, Chicken, Orange Juice, Koby 12's");
 
             foreach($items as $row) {
                 echo "<div><a href=\"shoppingCart.php?page=$row\"";
