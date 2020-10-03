@@ -10,7 +10,7 @@
             $username  = "root";
             $password  = "";
 
-            $conn = new mysqli($servername, $username, $password, "testdb");
+            $conn = mysqli_connect($servername, $username, $password, "testdb");
 
             if (!$conn) {
                 die("Connection failed: " . mysqli_connect_error());
