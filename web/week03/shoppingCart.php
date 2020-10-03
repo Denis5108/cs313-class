@@ -12,7 +12,7 @@
                 <h4 class="name">Name</h4>
                 <input type="text" name="quantity" class="form"  />
                 <input type="hidden" name="name" value="name"/>
-                <input type="hidden" name="price" value="price" /><br>
+                $<input type="hidden" name="price" value="price" /><br>
                 <input type="submit" name="addtocart" class="btn btn-info" value="Add to cart" />
             </div>
         </form>

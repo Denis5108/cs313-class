@@ -6,6 +6,9 @@
     padding: 10px;
 }
 
+.products {
+    text-align:center;
+}
 body {
     background-color: lightblue;
 }
