@@ -10,17 +10,19 @@
     $password = mysqli_real_escape_string($password);
 
     // connect to the server and select database
-    mysqli_connect("localhost", "root", "");
-    mysqli_select_db("login");
+    $conn = new mysqli("localhost", "root", "", "login");
 
-    // Query the database for user
-    $result = mysqli_query("selecy * from where username = '$username' and password = '$password'")
-    or die("Failed to query database" . mysqli_connect_error());
-
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    } else {
+        echo "Connected succeddfully";
+    }
     // $row = mysqli_fetch_array($result);
     // if ($row['username'] == $username && $row['password'] == $password) {
     //     echo "Logign sucess!!! Welcome " . $row['username';]
     // } else {
     //     echo "Failes to login!";
     // }
+
+    mysqli_close();
 ?>
