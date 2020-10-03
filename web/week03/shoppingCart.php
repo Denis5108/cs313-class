@@ -6,7 +6,11 @@
     <body>
         <nav>Our Decour Has Never Been Better</nav>
         <?php
-            $conn = mysqli_connect("localhost", "root", "");
+            $servername = "localhost";
+            $username   = "root";
+            $password   = "";
+
+            $conn = mysqli_connect($servername, $username, $password);
 
             if (!conn) {
                 die("Connection failed: " . mysqli_connect_error());
