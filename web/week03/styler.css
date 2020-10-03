@@ -1,3 +1,8 @@
-.items {
-    background-color: yellow;
+.product {
+    border: 2px solid black;
+    color: black;
+    background-color: lightgray;
+}
+body {
+    background-color: lightblue;
 }

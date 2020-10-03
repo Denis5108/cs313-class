@@ -4,7 +4,7 @@
 	    <link rel="stylesheet" type="text/css" href="styler.css">
         </head>
     <body>
-    <div class="">
+    <div class="product">
      <form method="post" action="checkout.php">
             <div class="products">
                 <img src="unknown" />
