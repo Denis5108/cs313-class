@@ -15,14 +15,17 @@
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     } else {
-        echo "Connected succeddfully";
+        echo "Connected successfully";
     }
-    // $row = mysqli_fetch_array($result);
-    // if ($row['username'] == $username && $row['password'] == $password) {
-    //     echo "Logign sucess!!! Welcome " . $row['username';]
-    // } else {
-    //     echo "Failes to login!";
-    // }
+    $sql    = "SELECT * FROM users WHERE username = '$username" AND password = '$password'";
+    $result = mysqli_query($conn, $sql);
+     
+    $row = mysqli_fetch_array($result);
+    if ($row['username'] == $username && $row['password'] == $password) {
+        echo "Login sucess!!! Welcome " . $row['username';]
+    } else {
+        echo "Failes to login!";
+    }
 
     mysqli_close();
 ?>
