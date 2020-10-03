@@ -5,13 +5,12 @@
     // to prevent mysql injection
     $username = stripcslashes($username);
     $password = stripcslashes($password);
-    $username = mysqli_real_escape_string($username);
-    $password = mysqli_real_escape_string($password);
+    $username = htmlspecialchars($username);
+    $password = htmlspecialchars($password);
 
     // connect to the database
-    mysqli_connect("localhost", "root", "");
-    mysqli_select_db("login");
+    mysqli_connect("localhost", "root", "", "login");
 
     // query the database for user
-    $result = mysqli_query("SELECT * FROM users WHERE username = '$username" AND password = '$password'") or die("Failed to query database " . mysqli_error());
+   $result = mysqli_query("SELECT * FROM users WHERE username = '$username" AND password = '$password'") or die("Failed to query database " . mysqli_error());
 ?>
