@@ -18,7 +18,7 @@
 
     if (mysqli_num_rows($result) > 0) {
         // check data
-        while ($row = mysq;i_fetch_assoc($result)) {
+        while ($row = mysqli_fetch_assoc($result)) {
             if ($row["username"] == $username && $row["password"] == $password)
             {
                 echo "Login success!";
