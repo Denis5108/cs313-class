@@ -9,7 +9,7 @@
             $servername = "localhost";
             $username   = "root";
             $password   = "";
-            $dbname     = "testdb";
+            $dbname     = "login";
 
             $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -17,8 +17,8 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            $sql = "SELECT customerID FROM customers";
-            $result = mysqli_query($conn, $sql) or die("Queriying data failed");
+            // $sql = "SELECT customerID FROM users";
+            // $result = mysqli_query($conn, $sql);
 
             // if (mysqli_num_rows($result) > 0) {
             //     // output data of each row
