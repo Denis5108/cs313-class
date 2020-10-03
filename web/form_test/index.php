@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="frm">
-        <form action="login.php" method="post">
-                <h2>Login</h2>
-                <?php if (isset($_GET['error'])) { ?>
-                    <p class="error"><?php echo $_GET['error']; ?></p>
-                <?php } ?>
-                <label>Username:</label>
-                <input type="text" id="user" name="username" placeholder="Username"/>
-                <label>Password:</label>
-                <input type="text" id="password" name="passord" placeholder="Password"/>
-                <button type="submit">Login</button>
-        </form>
-    </div>
-    </body>
+     <form action="login.php" method="post">
+     	<h2>LOGIN</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+     	<label>User Name</label>
+     	<input type="text" name="uname" placeholder="User Name"><br>
+
+     	<label>User Name</label>
+     	<input type="password" name="password" placeholder="Password"><br>
+
+     	<button type="submit">Login</button>
+     </form>
+</body>
 </html>
