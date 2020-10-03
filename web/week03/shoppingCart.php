@@ -18,7 +18,7 @@
             }
 
             $sql = "SELECT customerID FROM customers";
-            $result = mysqli_query($conn, $sql);
+            $result = mysqli_query($conn, $sql) or die("Queriying data failed");
 
             if (mysqli_num_rows($result) > 0) {
                 // output data of each row
