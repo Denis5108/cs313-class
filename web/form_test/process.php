@@ -20,7 +20,7 @@
     $sql    = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($conn, $sql);
 
-    // $row = mysqli_fetch_array($result);
+    $row = mysqli_fetch_array($result);
     // if ($row['username'] == $username && $row['password'] == $password) {
     //     echo "Login sucess!!! Welcome " . $row['username';]
     // } else {
