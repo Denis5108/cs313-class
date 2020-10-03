@@ -17,7 +17,7 @@
     } else {
         echo "Connected successfully";
     }
-    // $sql    = "SELECT * FROM users WHERE username = '$username" AND password = '$password'";
+    $sql    = "SELECT * FROM users WHERE username = '$username" AND password = '$password'";
     // $result = mysqli_query($conn, $sql);
 
     // $row = mysqli_fetch_array($result);
