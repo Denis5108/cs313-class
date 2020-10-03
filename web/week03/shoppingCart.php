@@ -16,7 +16,7 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            $sql = "SELECT customerID, firstName, lastName FROM customers WHERE firstName='Alex'";
+            $sql = "SELECT customerID, firstName, lastName FROM customers";
             $result = mysqli_query($conn, $sql);
 
             if (mysqli_num_rows($result) > 0) {
@@ -25,6 +25,7 @@
                     echo "id: " . $row["customerID"];
                 }
             }
+            mysqli_close($conn);
         ?>
     </body>
     </html>
