@@ -12,9 +12,9 @@
                     <p class="error"><?php echo $_GET['error']; ?></p>
                 <?php } ?>
                 <label>Username:</label>
-                <input type="text" id="user" name="user" placeholder="Username"/>
+                <input type="text" id="user" name="username" placeholder="Username"/>
                 <label>Password:</label>
-                <input type="text" id="password" name="pass" placeholder="Password"/>
+                <input type="text" id="password" name="passord" placeholder="Password"/>
                 <button type="submit">Login</button>
         </form>
     </div>
