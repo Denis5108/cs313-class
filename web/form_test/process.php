@@ -12,5 +12,5 @@
     mysqli_connect("localhost", "root", "", "login");
 
     // query the database for user
-   $result = mysqli_query("SELECT * FROM users WHERE username = '$username" AND password = '$password'") or die("Failed to query database " . mysqli_error());
+   //$result = mysqli_query("SELECT * FROM users WHERE username = '$username" AND password = '$password'") or die("Failed to query database " . mysqli_error());
 ?>
