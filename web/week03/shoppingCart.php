@@ -9,10 +9,9 @@
             <div class="products">
                 <img src="unknown" />
                 <h4 class="price">Price</h4>
+                <h4 class="name">Name</h4>
                 <input type="text" name="quantity" class="form"  />
-                Product Name:
                 <input type="hidden" name="name" value="name"/>
-                Product Price:
                 <input type="hidden" name="price" value="price" /><br>
                 <input type="submit" name="addtocart" class="btn btn-info" value="Add to cart" />
             </div>
