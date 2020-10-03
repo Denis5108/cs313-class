@@ -16,5 +16,14 @@
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($conn, $sql);
 
+    if (mysqli_num_rows($result) > 0) {
+        // check data
+        while ($row = mysq;i_fetch_assoc($result)) {
+            if ($row["username"] == $username && $row["password"] == $password)
+            {
+                echo "Login success!";
+            }
+        }
+    }
     mysqli_close($conn);
 ?>
