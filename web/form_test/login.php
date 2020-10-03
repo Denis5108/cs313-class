@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div id="frm">
-        <form action="process.php" method="POST">
-            <p>
-                <label>Username:</label>
-                <input type="text" id="user" name="user" />
-            </p>
-            <p>
-                <label>Password:</label>
-                <input type="text" id="password" name="pass" />
-            </p>
-            <p>
-                <input type="submit" id="btn" value="Login" />
-            </p>
-        </form>
-    </div>
-    </body>
-</html>
+<?php
+  if (isset($_POST['username']) && isset($_POST['password'])) {
+
+        function validate($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+        $username = validate($_POST['username']);
+        $password = validate($_POST['password']);
+
+        if (empty($username)) {
+            header("Location: index.php?error=Username is required");
+            exit();
+        } else if (empty($password))
+        {
+            header("Location: index.php?error=Password is requied");
+            exit();
+        } else {
+            echo "valid input";
+        }
+  }else {
+      header("Location: index.php");
+      exit();
+  }
+?>
