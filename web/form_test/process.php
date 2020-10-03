@@ -12,7 +12,7 @@
      die("Connection failed: " . mysqli_connect_error());
    }
    
-   $sql = "SELECT customerid, firstname, lastname FROM customers;
+   $sql = "SELECT customerid, firstname, lastname FROM customers";
    $result = mysqli_query($conn, $sql);
    
    if (mysqli_num_rows($result) > 0) {
