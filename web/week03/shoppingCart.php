@@ -21,11 +21,11 @@ session_start();
             echo "<div class=products>";
 
             echo "<img src='Denis Garley.jpg' />" . "<br>";
-            echo "<p>Cost: \'$\'$i </p>";
+            echo "<p>Cost: $$i </p>";
             echo "<input type=text name=txt$i />";
+            echo "<input type=submit value=Submit name=Add to Cart/>";
             echo "</div>";
         }
-        echo "<input type=submit value=Submit />";
         echo "</form>" . "</div>";
     ?>
     </body>
