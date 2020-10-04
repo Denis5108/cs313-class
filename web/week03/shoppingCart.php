@@ -8,10 +8,31 @@ session_start();
         <link rel="stylesheet" type="text/css" href="styler.css">
         </head>
     <body>
-        <form action="checkout.php" method="post">
+        <!-- <form action="checkout.php" method="post">
             <label for="username"><input type="text" name="username">Username</label>
             <input type="submit" name="submit" value="submit">
-    </form>
+    </form> -->
+
+    <?php
+        echo "<form method='post' action='checkout.php'>";
+        for ($i = 1; $i<=5; $i++)
+        {
+            echo "<input type='text' name='txt$i />" . "<br>";
+        }
+        echo "<input type='submit' value='Submit' />";
+        echo "</form>";
+
+        $arr = array();
+        for ($i = 0; $i<5; i++)
+        {
+            $arr[$i] = $_POST['txt'.$i];
+        }
+
+        foreach ($array as $ar)
+        {
+            echo $ar;
+        }
+    ?>
     </body>
     </html>
 
