@@ -34,13 +34,13 @@ session_start();
     </html>
     <?php
 
-    $shoe = $_POST["sho e"];
+    $shoe = $_POST["shoe"];
     echo "Your shoes ".$shoe;
 
-    foreach ($images as $key=>$value)
-    {
-        echo $value . "<br>";
-    }
+    // foreach ($images as $key=>$value)
+    // {
+    //     echo $value . "<br>";
+    // }
     // if (isset($_SESSION['test']) && ! empty($_SESSION['test'])) {
     //     echo $_SESSION['test'];
     // }
