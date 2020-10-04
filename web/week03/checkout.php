@@ -1,13 +1,14 @@
-<?php
-session_start();
-?>
 
+<?php
+$_SESSION['test'] = 'test';
+?>
 <!DOCTYPE html>
 <html>
-    <head>
-    <?php 
-        echo $_SESSION["name"] . "<br>";
-        echo $_SESSION["price"] . "<br>";
-    ?>
-</head>
+  <body>
+      <?php 
+        if (isset($_POST['submit']) && !empty($_POST['submit'])) {
+            header("Location: index.php");
+        }
+      ?>
+</body>
     </html>
