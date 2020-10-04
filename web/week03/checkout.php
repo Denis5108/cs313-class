@@ -6,6 +6,6 @@ $_SESSION['test'] = 'test';
 
 <?php 
 if (isset($_POST['submit']) && !empty($_POST['submit'])) {
-    header('Location: index.php');
+    header('Location: shoppingCart.php');
 }
 ?>
