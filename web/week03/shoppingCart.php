@@ -19,7 +19,9 @@ session_start();
         for ($i = 1; $i<=5; $i++)
         {
             echo "<div class=products>";
-            echo "<img src=Denis Garley.jpg />" . "<br>";
+
+            echo "<img src='Denis Garley.jpg' />" . "<br>";
+            echo "<p>Cost: $i </p>";
             echo "<input type=text name=txt$i />";
             echo "</div>";
         }
