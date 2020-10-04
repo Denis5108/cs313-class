@@ -21,17 +21,6 @@ session_start();
         }
         echo "<input type='submit' value='Submit' />";
         echo "</form>";
-
-        $arr = array();
-        for ($i = 0; $i<5; i++)
-        {
-            $arr[$i] = $_POST['txt'.$i];
-        }
-
-        foreach ($array as $ar)
-        {
-            echo $ar;
-        }
     ?>
     </body>
     </html>
