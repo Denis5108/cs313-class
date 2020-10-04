@@ -8,20 +8,19 @@ session_start();
         <link rel="stylesheet" type="text/css" href="styler.css">
         </head>
     <body>
-        <!-- <form action="checkout.php" method="post">
-            <label for="username"><input type="text" name="username">Username</label>
-            <input type="submit" name="submit" value="submit">
-    </form> -->
-
+ 
     <?php
+
+        $image = array();
+        $price = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
         echo "<form method=post action=checkout.php>";
-        for ($i = 1; $i<=8; $i++)
+        for ($i = 0; $i<=8; $i++)
         {
             echo "<div class=products>";
 
             echo "<img src='Denis Garley.jpg' />" . "<br>";
-            echo "<p>Cost: $$i </p>";
+            echo "<p>Cost: $$price[i] </p>";
             echo "<input type=text name=txt$i />" . "<br>";
             echo "<input type=submit value='Add to Cart'/>";
             echo "</div>";
