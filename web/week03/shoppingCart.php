@@ -16,7 +16,7 @@ session_start();
         //$name =  array("Jordan 1's",);
         $prices = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
-        echo "<form method=post action=<?php echo htmlspecialchars($_SERVER[PHP_SELF]);?>";
+        echo "<form method=post action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>";
         for ($i = 0; $i<=7; $i++)
         {
             echo "<div class=products>";
@@ -24,7 +24,7 @@ session_start();
             echo "<img src=$images[$i] />" . "<br>";
             echo "<p>Cost: $$prices[$i] </p>";
             echo "<p>Name: Jordan 1's</p>";
-            echo "<input type=text name=txt$i />" . "<br>";
+            echo "<input type=text name=shoe />" . "<br>";
             echo "<input type=submit value='Add to Cart'/>";
             echo "</div>";
         }
@@ -33,6 +33,10 @@ session_start();
     </body>
     </html>
     <?php
+
+    $shoe = $_POST["sho e"];
+    echo "Your shoes ".$shoe;
+
     foreach ($images as $key=>$value)
     {
         echo $value . "<br>";
