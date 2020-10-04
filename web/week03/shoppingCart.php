@@ -14,6 +14,7 @@ session_start();
     </form> -->
 
     <?php
+        echo "<div class=product>";
         echo "<form method=post action=checkout.php>";
         for ($i = 1; $i<=5; $i++)
         {
@@ -23,7 +24,7 @@ session_start();
             echo "</div>";
         }
         echo "<input type=submit value=Submit />";
-        echo "</form>";
+        echo "</form>" . "</div>";
     ?>
     </body>
     </html>

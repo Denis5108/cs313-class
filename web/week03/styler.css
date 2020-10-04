@@ -1,11 +1,10 @@
-.form {
+.product {
     border: 2px solid black;
     color: black;
     background-color: lightgray;
     width: 20%;
     padding: 10px;
 }
-
 .products {
     text-align:center;
 }
