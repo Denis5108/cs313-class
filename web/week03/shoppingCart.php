@@ -5,6 +5,7 @@ session_start();
 <html>
     <head>
         <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styler.css">
         </head>
     <body>
@@ -15,7 +16,7 @@ session_start();
         //$name =  array("Jordan 1's",);
         $prices = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
-        echo "<form method=post action=checkout.php>";
+        echo "<form method=post action=<?php echo htmlspecialchars($_SERVER[\"PHP_SELF\"]);?>";
         for ($i = 0; $i<=7; $i++)
         {
             echo "<div class=products>";
@@ -32,16 +33,12 @@ session_start();
     </body>
     </html>
     <?php
-
-    foreach($images as $key=>$nme)
+    foreach ($images as $key=>$value)
     {
-        if(isset($_POST[$key]))
-        {
-            echo $nme . "<br>";
-        }
+        echo $value . "<br>";
     }
-    if (isset($_SESSION['test']) && ! empty($_SESSION['test'])) {
-        echo $_SESSION['test'];
-    }
-      session_destroy();
-    ?>
+    // if (isset($_SESSION['test']) && ! empty($_SESSION['test'])) {
+    //     echo $_SESSION['test'];
+    // }
+    //   session_destroy();
+    // ?>
