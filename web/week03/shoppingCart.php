@@ -11,7 +11,7 @@ session_start();
  
     <?php
 
-        $image = array();
+        $image = array("shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg");
         $price = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
         echo "<form method=post action=checkout.php>";
