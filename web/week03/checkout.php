@@ -8,4 +8,12 @@ $_SESSION['test'] = 'test';
 if (isset($_POST['submit']) && !empty($_POST['submit'])) {
     header('Location: shoppingCart.php');
 }
+
+foreach($images as $key=>$nme)
+    {
+        if(isset($_POST[$key]))
+        {
+            echo $nme . "<br>";
+        }
+    }
 ?>
