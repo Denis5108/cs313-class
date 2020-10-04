@@ -17,9 +17,11 @@ session_start();
         echo "<form method=post action=checkout.php>";
         for ($i = 1; $i<=5; $i++)
         {
-            echo "<input type=text name=txt$i />" . "<br>";
+            echo "<div class=products>";
+            echo "<img src=Denis Garley.jpg />";
+            echo "<input type=text name=txt$i />";
+            echo "</div>";
         }
-        echo "<img src=Denis Garley.jpg />";
         echo "<input type=submit value=Submit />";
         echo "</form>";
     ?>
