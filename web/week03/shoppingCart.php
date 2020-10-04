@@ -22,8 +22,8 @@ session_start();
 
             echo "<img src='Denis Garley.jpg' />" . "<br>";
             echo "<p>Cost: $$i </p>";
-            echo "<input type=text name=txt$i />";
-            echo "<input type=submit value=Add to Cart/><br>";
+            echo "<input type=text name=txt$i />" . "<br>";
+            echo "<input type=submit value='Add to Cart'/>";
             echo "</div>";
         }
         echo "</form>" . "</div>";
