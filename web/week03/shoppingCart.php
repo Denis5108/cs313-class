@@ -16,14 +16,14 @@ session_start();
     <?php
         echo "<div class=product>";
         echo "<form method=post action=checkout.php>";
-        for ($i = 1; $i<=5; $i++)
+        for ($i = 1; $i<=8; $i++)
         {
             echo "<div class=products>";
 
             echo "<img src='Denis Garley.jpg' />" . "<br>";
             echo "<p>Cost: $$i </p>";
             echo "<input type=text name=txt$i />";
-            echo "<input type=submit value=Submit name=Add to Cart/>";
+            echo "<input type=submit value=Add to Cart/><br>";
             echo "</div>";
         }
         echo "</form>" . "</div>";
