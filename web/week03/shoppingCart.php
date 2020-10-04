@@ -14,10 +14,10 @@ session_start();
     </form> -->
 
     <?php
-        echo "<form method='post' action='checkout.php'>";
+        echo "<form method=post action=checkout.php>";
         for ($i = 1; $i<=5; $i++)
         {
-            echo "<input type='text' name='txt$i />" . "<br>";
+            echo "<input type=text name=txt$i />" . "<br>";
         }
         echo "<input type='submit' value='Submit' />";
         echo "</form>";
