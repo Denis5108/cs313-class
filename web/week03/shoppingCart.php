@@ -12,6 +12,7 @@ session_start();
     <?php
 
         $image = array("shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg");
+        $name =  array("Jordan 1's",);
         $price = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
         echo "<form method=post action=checkout.php>";
@@ -19,9 +20,9 @@ session_start();
         {
             echo "<div class=products>";
 
-            echo "<img src='Denis Garley.jpg' />" . "<br>";
+            echo "<img src=$image[$i] />" . "<br>";
             echo "<p>Cost: $$price[$i] </p>";
-            echo "<input type=text name=txt$i />" . "<br>";
+            echo "<input type=text name=$price[0] />" . "<br>";
             echo "<input type=submit value='Add to Cart'/>";
             echo "</div>";
         }
