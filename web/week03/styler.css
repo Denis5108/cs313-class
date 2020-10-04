@@ -1,12 +1,10 @@
-.product {
+
+.products {
     border: 2px solid black;
     color: black;
     background-color: lightgray;
     width: 20%;
     padding: 10px;
-}
-.products {
-    text-align:center;
 }
 body {
     background-color: lightblue;
