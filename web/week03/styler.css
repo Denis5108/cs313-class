@@ -9,6 +9,9 @@
     margin: 5px;
     float: left;
 }
+img {
+    width: 30%;
+}
 body {
     background-color: lightblue;
 }
