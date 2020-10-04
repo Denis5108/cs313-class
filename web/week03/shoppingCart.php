@@ -7,7 +7,7 @@
     <div class="product">
      <form method="post" action="checkout.php">
             <div class="products">
-                <img src="unknown" />
+                <img src="Denis Garley.jpg" />
                 <h4 class="price">Price</h4>
                 <h4 class="name">Name</h4>
                 <input type="text" name="quantity" class="form"  />
