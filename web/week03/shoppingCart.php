@@ -9,14 +9,14 @@ session_start();
         <link rel="stylesheet" type="text/css" href="styler.css">
         </head>
     <body>
- 
+
     <?php
 
         $images = array("shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg");
         //$name =  array("Jordan 1's",);
         $prices = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
-        echo "<form method=post action=$_SERVER[PHP_SELF]";
+        echo "<form method=post action=checkout.php";
         for ($i = 0; $i<=7; $i++)
         {
             echo "<div class=products>";
@@ -34,15 +34,12 @@ session_start();
     </html>
     <?php
 
-    $shoe = $_POST["shoe"];
-    echo "Your shoes ".$shoe;
+    if (isset($_SESSION['test']) && ! empty($_SESSION['test'])) {
+        echo $_SESSION['test'];
+        
+        $shoe = $_POST["shoe"];
+        echo "Your shoes ".$shoe;
 
-    // foreach ($images as $key=>$value)
-    // {
-    //     echo $value . "<br>";
-    // }
-    // if (isset($_SESSION['test']) && ! empty($_SESSION['test'])) {
-    //     echo $_SESSION['test'];
-    // }
-    //   session_destroy();
-    // ?>
+    }
+      session_destroy();
+    ?>
