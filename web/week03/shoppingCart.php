@@ -11,17 +11,17 @@ session_start();
  
     <?php
 
-        $image = array("shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg");
+        $images = array("shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg", "shoes.jpg");
         //$name =  array("Jordan 1's",);
-        $price = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
+        $prices = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
         echo "<form method=post action=checkout.php>";
         for ($i = 0; $i<=7; $i++)
         {
             echo "<div class=products>";
 
-            echo "<img src=$image[$i] />" . "<br>";
-            echo "<p>Cost: $$price[$i] </p>";
+            echo "<img src=$images[$i] />" . "<br>";
+            echo "<p>Cost: $$prices[$i] </p>";
             echo "<p>Name: Jordan 1's</p>";
             echo "<input type=text name=txt$i />" . "<br>";
             echo "<input type=submit value='Add to Cart'/>";
@@ -31,8 +31,15 @@ session_start();
     ?>
     </body>
     </html>
-
     <?php
+
+    foreach($images as $key=>$nme)
+    {
+        if(isset($_POST[$key]))
+        {
+            echo $nme . "<br>";
+        }
+    }
     if (isset($_SESSION['test']) && ! empty($_SESSION['test'])) {
         echo $_SESSION['test'];
     }
