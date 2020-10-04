@@ -19,7 +19,7 @@ session_start();
         {
             echo "<input type=text name=txt$i />" . "<br>";
         }
-        echo "<input type='submit' value='Submit' />";
+        echo "<input type=submit value=Submit />";
         echo "</form>";
     ?>
     </body>
