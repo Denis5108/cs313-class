@@ -5,6 +5,9 @@
     background-color: lightgray;
     width: 20%;
     padding: 10px;
+    text-align: center;
+    margin: 5px;
+    float: right;
 }
 body {
     background-color: lightblue;
