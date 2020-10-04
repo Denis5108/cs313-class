@@ -16,7 +16,7 @@ session_start();
         //$name =  array("Jordan 1's",);
         $prices = array("30", "20", "67", "89", "56", "89", "34", "120", "123");
         echo "<div class=product>";
-        echo "<form method=post action=$_SERVER['PHP_SELF'];
+        echo "<form method=post action=$_SERVER[PHP_SELF];
         for ($i = 0; $i<=7; $i++)
         {
             echo "<div class=products>";
